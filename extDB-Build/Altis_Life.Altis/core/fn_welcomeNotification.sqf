@@ -1,20 +1,48 @@
 /*
-	File: fn_welcomeNotification.sqf
-	
+	File: fn_welcome.sqf
+	Author: Sahrani-Life
 	Description:
-	Called upon first spawn selection and welcomes our player.
+	Welcome Messages after player connected
 */
-format["Welcome %1, Please read the following as it is important!",profileName] hintC
-[
-	"Welcome to the server! A few things have changed with Altis Life RPG that you need to be aware of!",
-	"An interaction key has been introduced which replaces the large majority of scroll wheel actions, this was for performance issues. By default this key is [Left Windows], you can change this key by pressing ESC and going to Configure->Controls->Custom
-	and bind 'Use Action 10' to a single key like H. This key is used for the following actions",
-	"Picking up items and money.",
-	"Fishing and gathering",
-	"Interacting with players (as a cop)",
-	"Interacting with vehicles (repairing and cop actions)",
-	"",
-	"If you are having issues with interacting / picking up items just wait. A quick way to know when you can interact with that item if the server allows it is by pressing your tilde key (~) and using the circle to highlight the object, when it says for example 'Pile of Money' then
-	that means you can pick it up!."
-];
-	
+[] spawn {
+    sleep 5;
+    [
+    	[
+    		["Willkommen ","align = 'center' shadow = '1' size = '0.5' font='PuristaBold'","#38701E"],
+    		["auf dem Life Server ","align = 'center' shadow = '1' size = '0.5'","#FFFFFF"],
+    		["Unnamed Life "," align = 'center' shadow = '1' size = '0.5'","#38701E"]
+    	]
+    ] spawn BIS_fnc_typeText2;
+    sleep 10;
+    [
+    	[
+    		["Komm doch auf unser Teamspeak: ","align = 'center' shadow = '1' size = '0.5' font='PuristaBold'","#FFFFFF"],
+    		["wurst ","align = 'center' shadow = '1' size = '0.5'","#38701E"],
+    		[" "," align = 'center' shadow = '1' size = '0.5'","#FFFFFF"]
+    	]
+    ] spawn BIS_fnc_typeText2;
+    sleep 10;
+    [
+    	[
+    		["Oder besuch unsere Homepage: ","align = 'center' shadow = '1' size = '0.5' font='PuristaBold'","#FFFFFF"],
+    		["wurst ","align = 'center' shadow = '1' size = '0.5'","#38701E"],
+    		[" "," align = 'center' shadow = '1' size = '0.5'","#FFFFFF"]
+    	]
+    ] spawn BIS_fnc_typeText2;
+    sleep 10;
+    [
+    	[
+    		["Beachte immer die Regeln! ","align = 'center' shadow = '1' size = '0.5' font='PuristaBold'","#FFFFFF"],
+    		["Diese findest du auf unserer Webseite ","align = 'center' shadow = '1' size = '0.5'","#38701E"],
+    		[" "," align = 'center' shadow = '1' size = '0.5'","#FFFFFF"]
+    	]
+    ] spawn BIS_fnc_typeText2;
+    sleep 10;
+    [
+    	[
+    		["Viel Spaß ","align = 'center' shadow = '1' size = '0.5' font='PuristaBold'","#38701E"],
+    		["wünschen dir die ","align = 'center' shadow = '1' size = '0.5'","#FFFFFF"],
+    		["Admins von Unnamed Life  "," align = 'center' shadow = '1' size = '0.5'","#38701E"]
+    	]
+    ] spawn BIS_fnc_typeText2;
+};

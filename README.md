@@ -9,6 +9,7 @@ http://www.bwmod.de
 * Battleye aktivieren
 * InfiStar aktivieren
 * BW-Mod einbinden
+* Taskforceradio
 * BW Fahrzeuge & Waffen in Shops (erst mal nur testweise)
 * Rang, Skill, Lizenz System
 * Map bearbeiten

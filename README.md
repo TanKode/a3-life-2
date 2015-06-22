@@ -19,3 +19,4 @@ http://www.bwmod.de
     * Stadtübernahmen
     * Konvoi
     * Stützpunkt
+* damage & kill detection

@@ -30,7 +30,7 @@ class life_dynmarket_changeprice {
 		class RscText_1001: Life_RscText
 		{
 			idc = 7003;
-			text = "TO PRICE"; //--- ToDo: Localize;
+			text = "Zum Preis"; //--- ToDo: Localize;
 			x = 0.557292 * safezoneW + safezoneX;
 			y = 0.456017 * safezoneH + safezoneY;
 			w = 0.0515625 * safezoneW;

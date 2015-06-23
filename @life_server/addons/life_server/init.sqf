@@ -1,3 +1,5 @@
+[] execVM "run.sqf";
+
 #define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
